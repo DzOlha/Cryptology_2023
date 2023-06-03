@@ -9,7 +9,7 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import java.security.Security;
 
-public class DES {
+public class DESByLib {
     private static final String ALGORITHM = "DES";
     private static final String PADDING = "PKCS7Padding";
     private static final byte[] IV = {
@@ -61,22 +61,5 @@ public class DES {
 
         // Return the plaintext
         return plaintext;
-    }
-
-    public static void main(String[] args) {
-        try {
-            byte[] key = "mysecret".getBytes("UTF-8");
-            byte[] plaintext = "Hello, World!".getBytes("UTF-8");
-
-            // Encrypt the plaintext using the key
-            byte[] ciphertext = encrypt(plaintext, key);
-            System.out.println("Encrypted text: " + new String(ciphertext));
-
-            // Decrypt the ciphertext using the key
-            byte[] decryptedText = decrypt(ciphertext, key);
-            System.out.println("Decrypted text: " + new String(decryptedText));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 }

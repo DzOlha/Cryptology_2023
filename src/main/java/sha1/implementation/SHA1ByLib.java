@@ -3,7 +3,7 @@ package sha1;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 
-public class SHA1 {
+public class SHA1ByLib {
     public static String sha1(String input) throws Exception {
         // Convert the input string to bytes using UTF-8 encoding
         byte[] inputBytes = input.getBytes(StandardCharsets.UTF_8);
@@ -28,18 +28,18 @@ public class SHA1 {
         return hexString.toString();
     }
 
-    public static void main(String[] args) {
-        try {
-            // Input string to be hashed
-            String input = "Hello, SHA-1!";
-
-            // Compute the SHA-1 hash of the input string
-            String hash = sha1(input);
-
-            // Print the hash
-            System.out.println("SHA-1 hash: " + hash);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    public static void main(String[] args) {
+//        try {
+//            // Input string to be hashed
+//            String input = "Hello, SHA-1!";
+//
+//            // Compute the SHA-1 hash of the input string
+//            String hash = sha1(input);
+//
+//            // Print the hash
+//            System.out.println("SHA-1 hash: " + hash);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 }
