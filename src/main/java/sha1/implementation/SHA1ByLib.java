@@ -1,4 +1,4 @@
-package sha1;
+package sha1.implementation;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
