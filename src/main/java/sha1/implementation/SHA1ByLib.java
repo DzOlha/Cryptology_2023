@@ -27,19 +27,4 @@ public class SHA1ByLib {
         // Return the hexadecimal string representation of the SHA-1 hash
         return hexString.toString();
     }
-
-//    public static void main(String[] args) {
-//        try {
-//            // Input string to be hashed
-//            String input = "Hello, SHA-1!";
-//
-//            // Compute the SHA-1 hash of the input string
-//            String hash = sha1(input);
-//
-//            // Print the hash
-//            System.out.println("SHA-1 hash: " + hash);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
 }
